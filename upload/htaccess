@@ -1,0 +1,4 @@
+php_value mysql.default_host "183.96.146.15"
+php_value mysql.default_user "wow"
+php_value mysql.default_password "wow"
+

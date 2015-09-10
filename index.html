@@ -1,0 +1,66 @@
+<?php
+session_start();
+print_r($_SESSEION);
+?>
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="UTF-8">		
+		<link rel="stylesheet" href="./CSS/bootstrap/css/bootstrap.css" type="text/css" charset="UTF-8" media="all"/>		
+		
+		<title>Porta</title>
+	</head>
+	<body>
+	
+		<center>
+		<div class="page-header">
+			<a href="index.html"></a>
+  			<h1><font size=180>Porta </font><br><small>교내 동아리 통합 지원 페이지</small></h1>
+		</div>
+		</center>
+		<div class="row embed-responsive-item" style="margin:0% 0 0 23%;width:80%;height:20%"" >
+  			<div class="col-sm-6 col-md-4" >
+    				<div class="thumbnail" >
+					<a href="club_main.php?club=syssecu">
+      					<img src="/image/system.png" width="40%" height="30%" alt="..."></a>
+      						<div class="caption">
+							<center>        				
+							<h1>System Security</h1>
+        						</center>
+      						</div>
+    				</div>
+				<div class="thumbnail" >
+					<a href="club_main.php?club=network">
+      					<img src="/image/network.png" width="40%" height="30%" alt="..."></a>
+      						<div class="caption">
+							<center>        				
+							<h1>Network Security</h1>
+        						</center>
+      						</div>
+    				</div>
+  			</div>
+			<div class="col-sm-6 col-md-4" >
+    				<div class="thumbnail">
+					<a href="club_main.php?club=program">
+      					<img src="/image/program.png" width="40%" height="30%" alt="..."></a>
+      						<div class="caption">
+							<center>        				
+							<h1>Programming</h1>
+        						</center>
+      						</div>
+    				</div>
+				<div class="thumbnail" >
+					<a href="club_main.php?club=forensic">
+      					<img src="/image/forensic.png" width="40%" height="30%" alt="..."></a>
+      						<div class="caption">
+							<center>        				
+							<h1>Forensic</h1>
+        						</center>
+      						</div>
+    				</div>
+  			</div>
+			
+		</div>
+		<i>&copy; CopyRight 2015 Tempus.</i>
+	</body>
+</html>
