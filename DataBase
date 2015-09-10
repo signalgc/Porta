@@ -1,17 +1,4 @@
-kip to content
-This repository  
-Pull requests
-Issues
-Gist
- @Tempuss
- Unwatch 1
-  Star 0
-  Fork 0
-Tempuss/Porta
-Branch: master  Porta/DataBase
-@TempussTempuss 8 hours ago Create DataBase
-1 contributor
-RawBlameHistory    131 lines (113 sloc)  2.855 kB
+
 create database syssecu;
 create database network;
 create database program;
