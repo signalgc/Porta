@@ -1,0 +1,145 @@
+kip to content
+This repository  
+Pull requests
+Issues
+Gist
+ @Tempuss
+ Unwatch 1
+  Star 0
+  Fork 0
+Tempuss/Porta
+Branch: master  Porta/DataBase
+@TempussTempuss 8 hours ago Create DataBase
+1 contributor
+RawBlameHistory    131 lines (113 sloc)  2.855 kB
+create database syssecu;
+create database network;
+create database program;
+create database forensic;
+
+
+use syssecu;
+flush privileges;
+create table board(
+	board_idx int(11) primary key auto_increment,
+	id varchar(20),
+	title varchar(100) ,
+	num int(11) ,
+	writeday int(11) ,
+	readnum int(11) ,
+	content text ,
+	ip varchar(20),
+	pwd varchar(20)
+	
+);
+flush privileges;
+
+create table user(
+	id varchar(20),
+	email varchar(40),
+	pwd varchar(20),
+	stunum int(11)
+);
+flush privileges;
+insert into user(id,email,pwd,stunum)values ('root','ben3679@naver.com','wpwkrtlf123',777);
+flush privileges;
+
+use network;
+flush privileges;
+create table board(
+	board_idx int(11) primary key auto_increment,
+	id varchar(20),
+	title varchar(100) ,
+	num int(11) ,
+	writeday int(11) ,
+	readnum int(11) ,
+	content text ,
+	ip varchar(20),
+	pwd varchar(20)
+	
+);
+flush privileges;
+
+create table user(
+	id varchar(20),
+	email varchar(40),
+	pwd varchar(20),
+	stunum int(11)
+);
+flush privileges;
+insert into user(id,email,pwd,stunum)values ('root','ben3679@naver.com','wpwkrtlf123',777);
+flush privileges;
+
+use program;
+flush privileges;
+create table board(
+	board_idx int(11) primary key auto_increment,
+	id varchar(20),
+	title varchar(100) ,
+	num int(11) ,
+	writeday int(11) ,
+	readnum int(11) ,
+	content text ,
+	ip varchar(20),
+	pwd varchar(20)
+	
+);
+flush privileges;
+
+create table user(
+	id varchar(20),
+	email varchar(40),
+	pwd varchar(20),
+	stunum int(11)
+);
+flush privileges;
+insert into user(id,email,pwd,stunum)values ('root','ben3679@naver.com','wpwkrtlf123',777);
+flush privileges;
+
+use forensic;
+flush privileges;
+create table board(
+	board_idx int(11) primary key auto_increment,
+	id varchar(20),
+	title varchar(100) ,
+	num int(11) ,
+	writeday int(11) ,
+	readnum int(11) ,
+	content text ,
+	ip varchar(20),
+	pwd varchar(20)
+	
+);
+flush privileges;
+
+create table user(
+	id varchar(20),
+	email varchar(40),
+	pwd varchar(20),
+	stunum int(11)
+);
+flush privileges;
+insert into user(id,email,pwd,stunum)values ('root','ben3679@naver.com','wpwkrtlf123',777);
+flush privileges;
+
+use mysql;
+insert into user(host,user,password) values('%','syssecu',password('syssecu123'));
+flush privileges;
+grant all privileges on syssecu.* to syssecu@'%' identified by 'syssecu123';
+flush privileges;
+
+insert into user(host,user,password) values('%','forensic',password('forensic123'));
+flush privileges;
+grant all privileges on forensic.* to forensic@'%' identified by 'forensic123';
+flush privileges;
+
+insert into user(host,user,password) values('%','network',password('network123'));
+flush privileges;
+grant all privileges on network.* to network@'%' identified by 'network123';
+flush privileges;
+
+insert into user(host,user,password) values('%','program',password('program123'));
+flush privileges;
+grant all privileges on program.* to program@'%' identified by 'program123';
+flush privileges;
+
