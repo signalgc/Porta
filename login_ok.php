@@ -9,7 +9,7 @@
             
 
 		
-		@$query="select id,pwd from user where id='" . mysqli_real_escape_string($conn,$id) . "' AND pwd='" . mysqli_real_escape_string($conn,$pwd) . "' limit 1";
+		@$query="select id,pwd from user where id='$id' AND pwd='$pwd' limit 1";
 
 		@$result=mysqli_query($conn,$query);
 
